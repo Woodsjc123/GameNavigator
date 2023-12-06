@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'game_navigator_app.apps.GameNavigatorAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,8 +80,8 @@ DATABASES = {
         'NAME': 'game_navigator_db',
         'USER': 'woodsjc',
         'PASSWORD': 'Millie&Ruby',
-        'HOST': 'localhost',  # Set to empty string for localhost.
-        'PORT': '',  # Set to empty string for default.
+        'HOST': 'localhost', 
+        'PORT': '', 
     }
 }
 
