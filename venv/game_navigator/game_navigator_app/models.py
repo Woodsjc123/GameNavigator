@@ -34,7 +34,7 @@ class UserGameRating(models.Model):
     rating = models.IntegerField()
 
     class Meta:
-        unique_together = ('user', 'game')  # Ensure each user can rate a game only once
+        unique_together = ('user', 'game')
 
     def __str__(self):
         return f"{self.user.username} - {self.game.name} - Rating: {self.rating}"
